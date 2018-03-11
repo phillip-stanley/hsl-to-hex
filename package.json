@@ -4,7 +4,8 @@
   "description": "hsl to hex converter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
   "keywords": [],
   "author": "Phillip Stanley",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/phillip-stanley/hsl-to-hex/issues"
   },
-  "homepage": "https://github.com/phillip-stanley/hsl-to-hex#readme"
+  "homepage": "https://github.com/phillip-stanley/hsl-to-hex#readme",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.0",
+    "tap": "^11.1.2"
+  }
 }
